@@ -1,5 +1,6 @@
 # Cpp Files #
 ###################
+/debug
 *.vcxproj
 *.filters
 *.user

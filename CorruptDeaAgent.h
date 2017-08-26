@@ -17,7 +17,6 @@ public:
 	//getters and setters
 	int getMaxProtectionDemands() const;
 	void setMaxProtectionDemands(int num);
-
 	//methods
 	float getProtection(DrugDealer& dealer);
 	//Override. if drug dealer is a corrupt agent, get bribe from him for not arresting him
