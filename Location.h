@@ -1,30 +1,33 @@
 #ifndef __Location_H
 #define __Location_H
 
+#include "Person.h"
+
 class Location
 {
-	int locationId
+	Location(const Location& location);
+	int locationId;
 	int numOfPlaces;
 	char* name;
-	Person* places;
+	Person** places;
 	bool isMethLab;
 public:
-	Location(const char* name, int numOfPlaces = 1, bool isMethLab = false, int locationId);
-	Location(const Location& location) = delete;
+	Location(int locationId, const char* name, int numOfPlaces = 1, bool isMethLab = false):
+	  numOfPlaces(numOfPlaces), isMethLab(isMethLab){}
 	~Location();
 
 	//getters and setters
+	int getId() const;	
 	const char* const getName() const;
 	void setName(const char& newName);
 	const Person* const getPersonById(int id) const;
-	int getId() const;
 	int getNumOfPlaces() const;
 	//methods
-	void add(const &Person person);
-	void remove(const &Person person);
+	void add(Person* person);
+	void remove(Person* person);
 	void show() const;
 	void convertToMethLab();
 	void convertToNormalLocation();
-}
+};
 
 #endif
