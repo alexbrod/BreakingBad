@@ -3,6 +3,8 @@
 
 #include "Person.h"
 
+class Person;
+
 class Location
 {
 	Location(const Location& location);
