@@ -7,9 +7,10 @@ class DrugDealer: virtual public Person
 {
 protected:
 	bool arrested;
+	
+	DrugDealer(const DrugDealer& d);
 public:
-	DrugDealer(int id, const char* name): Person(id,name), arrested(false){}
-	DrugDealer(const DrugDealer& d) = delete;
+	DrugDealer(const Person& p): Person(p) ,arrested(false){}
 	~DrugDealer();
 
 	//getters and setters

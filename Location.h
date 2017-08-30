@@ -1,7 +1,7 @@
 #ifndef __Location_H
 #define __Location_H
 
-#include "Person.h"
+//#include "Person.h"
 
 class Person;
 

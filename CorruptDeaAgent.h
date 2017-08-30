@@ -8,8 +8,8 @@ class CorruptDeaAgent: public DeaAgent, public DrugDealer
 {
 	int maxProtectionDemands;
 public:
-	CorruptDeaAgent(int id, const char* name, int maxSearches, int maxProtectionDemands = 0):
-	  Person(id, name), DeaAgent(id, name, maxSearches), DrugDealer(id, name),
+	CorruptDeaAgent(const DeaAgent& agent, const DrugDealer& dealer, int maxProtectionDemands = 0):
+	  Person(agent.getId(), agent.getName()), DeaAgent(agent), DrugDealer(dealer),
 		  maxProtectionDemands(maxProtectionDemands){}
 	CorruptDeaAgent(CorruptDeaAgent& agent) = delete;
 	~CorruptDeaAgent();

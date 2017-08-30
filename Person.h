@@ -1,7 +1,8 @@
 #ifndef __Person_H
 #define __Person_H
 
-#include "Location.h"
+//#include "Location.h"
+class Location;
 
 class Person
 {
@@ -10,9 +11,10 @@ protected:
 	char* name;
 	Location* location;
 	float balance;
+	
+	Person(const Person& p);
 public:
-	Person(int id, const char* name, const Location* location = nullptr, float balance = 0);
-	Person(const Person& p) = delete;
+	Person(int id, const char* name = NULL, const Location* location = nullptr, float balance = 0);
 	~Person();
 
 	//getters and setters

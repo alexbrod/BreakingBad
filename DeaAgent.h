@@ -9,10 +9,11 @@ class DeaAgent: virtual public Person
 protected:
 	int maxSearches;
 	int numOfArrests;
+	
+	DeaAgent(const DeaAgent& agent);
 public:
-	DeaAgent(int id, const char* name, int maxSearches = 1): 
-	  Person(id,name), numOfArrests(0), maxSearches(maxSearches){}
-	DeaAgent(const DeaAgent& agent) = delete;
+	DeaAgent(const Person& p, int maxSearches = 1): 
+	  Person(p), numOfArrests(0), maxSearches(maxSearches){}
 	~DeaAgent();
 
 	//getter and setters
