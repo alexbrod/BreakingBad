@@ -7,21 +7,29 @@
 class CorruptDeaAgent: public DeaAgent, public DrugDealer
 {
 	int maxProtectionDemands;
-public:
-	CorruptDeaAgent(const DeaAgent& agent, const DrugDealer& dealer, int maxProtectionDemands = 0):
-	  Person(agent.getId(), agent.getName()), DeaAgent(agent), DrugDealer(dealer),
-		  maxProtectionDemands(maxProtectionDemands){}
+protected:
 	CorruptDeaAgent(CorruptDeaAgent& agent) = delete;
-	~CorruptDeaAgent();
+	float getBribe(CorruptDeaAgent* agent);
+public:
+	CorruptDeaAgent(const DeaAgent& agent, int maxProtectionDemands = 0):
+	  	Person(agent.getId(), agent.getName(), agent.getBalance()), DeaAgent(agent),
+		DrugDealer(agent.getId(), agent.getName(), agent.getBalance()),
+		maxProtectionDemands(maxProtectionDemands){cout << "In CorruptDeaAgent::CorruptDeaAgent\n";}
+	~CorruptDeaAgent(){cout << "In CorruptDeaAgent::~CorruptDeaAgent\n";}
 
 	//getters and setters
 	int getMaxProtectionDemands() const;
 	void setMaxProtectionDemands(int num);
 	//methods
 	float getProtection(DrugDealer& dealer);
-	//Override. if drug dealer is a corrupt agent, get bribe from him for not arresting him
-	void arrest(DrugDealer* dealer); 
-	float getBribe(CorruptDeaAgent* agent);
+	virtual void arrest(DrugDealer* dealer) override{}
+	virtual void arrest(DrugDealer** dealer) override{} 
+	//operators
+	virtual bool operator==(const Person& p) const{}
+	virtual void toOs(ostream& os) const
+	{
+		os << "In CorruptDeaAgent maxProtectionDemands:" << maxProtectionDemands << " ";
+	}
 };
 
 #endif
