@@ -2,6 +2,7 @@
 #define __DeaAgent_H
 
 #include "Person.h"
+#include "DrugDealer.h"
 
 class DeaAgent: virtual public Person
 {
