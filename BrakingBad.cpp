@@ -4,6 +4,7 @@ using namespace std;
 #include "DeaAgent.h"
 #include "CorruptDeaAgent.h"
 #include "Provider.h"
+#include "Client.h"
 
 int main()
 {
@@ -74,7 +75,7 @@ int main()
 		}
 		else if(i < NUM_OF_DEA_AGENTS + NUM_OF_PROVIDERS + NUM_OF_DISTRIBUTERS + NUM_OF_COOCKS + NUM_OF_CLIENTS)
 		{
-			//persons[i] = new Client(i, personsNames[i], (i + 1) * 1000);
+			persons[i] = new Client(i, const_cast<char *>(personsNames[i]), (i + 1) * 1000);
 			cout << "-------------------\n";
 		}
 		else if(i < NUM_OF_DEA_AGENTS + NUM_OF_PROVIDERS + NUM_OF_DISTRIBUTERS + NUM_OF_COOCKS + NUM_OF_CLIENTS

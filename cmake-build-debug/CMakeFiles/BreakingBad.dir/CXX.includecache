@@ -7,10 +7,20 @@
 #IncludeRegexTransform: 
 
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/BrakingBad.cpp
+iostream
+-
 DeaAgent.h
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/DeaAgent.h
 CorruptDeaAgent.h
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/CorruptDeaAgent.h
+Provider.h
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Provider.h
+Client.h
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Client.h
+
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Client.h
+Person.h
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Person.h
 
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/CorruptDeaAgent.h
 DeaAgent.h
@@ -21,18 +31,18 @@ DrugDealer.h
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/DeaAgent.h
 Person.h
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Person.h
-DrugDealer.h
-/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/DrugDealer.h
 
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/DrugDealer.h
 Person.h
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Person.h
 
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Location.h
-Person.h
-/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Person.h
 
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Person.h
 Location.h
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Location.h
+
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Provider.h
+DrugDealer.h
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/DrugDealer.h
 

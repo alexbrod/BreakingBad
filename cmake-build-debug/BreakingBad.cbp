@@ -83,6 +83,9 @@
 		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/BrakingBad.cpp">
 			<Option target="BreakingBad"/>
 		</Unit>
+		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Client.h">
+			<Option target="BreakingBad"/>
+		</Unit>
 		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/CorruptDeaAgent.h">
 			<Option target="BreakingBad"/>
 		</Unit>

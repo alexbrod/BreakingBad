@@ -3,8 +3,10 @@
 
 CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o
  /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/BrakingBad.cpp
+ /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Client.h
  /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/CorruptDeaAgent.h
  /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/DeaAgent.h
  /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/DrugDealer.h
  /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Location.h
  /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Person.h
+ /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Provider.h
