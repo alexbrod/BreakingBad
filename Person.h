@@ -3,6 +3,7 @@
 
 #include "Location.h"
 
+
 class Person
 {
 protected:
@@ -10,19 +11,30 @@ protected:
 	char* name;
 	Location* location;
 	float balance;
+	
+	Person(const Person& p): id(id), name(name), balance(balance) {cout << "Person::Person(copy)\n";}
+	Person(int id, char* name = NULL, float balance = 0, Location* location = nullptr):
+		id(id), balance(balance), location(location){cout << "Person::Person\n";}
+
 public:
-	Person(int id, const char* name, const Location* location = nullptr, float balance = 0);
-	Person(const Person& p) = delete;
-	~Person();
+	virtual ~Person(){cout << "Person::~Person\n";}
 
 	//getters and setters
-	int getId() const;
-	const char* const getName() const;
+	int getId() const {return id;}
+	char* const getName() const{return name;}
 	void setName(const char& newName);
-	const Location* const getLocation() const;
+	const Location* const getLocation() const{return location;}
 	void setBalance(float amount);
-	float getBalance() const;
+	float getBalance() const{return balance;}
 	void moveToLocation(Location* newLocation);	
+	//operators
+	virtual bool operator==(const Person& p) const =0;
+	virtual void toOs(ostream& os) const {}
+	friend ostream& operator<<(ostream& os, const Person& p)
+	{
+		os	<< "In Person id:" << p.getId() << //" name:" << p.getName() <<
+			 " location:" << p.getLocation() << " balance:" << p.getBalance() << "\n";
+	}
 };
 
 #endif
