@@ -17,10 +17,14 @@ Provider.h
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Provider.h
 Client.h
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Client.h
+Distributor.h
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Distributor.h
 
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Client.h
 Person.h
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Person.h
+
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Coock.h
 
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/CorruptDeaAgent.h
 DeaAgent.h
@@ -32,11 +36,23 @@ DrugDealer.h
 Person.h
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Person.h
 
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Distributor.h
+Client.h
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Client.h
+Meth.h
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Meth.h
+DrugDealer.h
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/DrugDealer.h
+Coock.h
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Coock.h
+
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/DrugDealer.h
 Person.h
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Person.h
 
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Location.h
+
+/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Meth.h
 
 /Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Person.h
 Location.h

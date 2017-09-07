@@ -11,7 +11,8 @@
 class Client: virtual public Person
 {
 
-
+protected:
+    bool isDragUser;
 
 public:
     virtual ~Client(){cout << "Client::~Client\n";}
@@ -23,8 +24,14 @@ public:
     virtual bool operator==(const Person& p) const {};
     virtual void toOs(ostream& os) const
     {
-        os << "In Client a:" << "" << " ";
+        os << "In Client is a drug user:" << isDragUser << " ";
     }
+
+    bool isIsDragUser() const {
+        return isDragUser;
+    }
+
+    void setIsDragUser(bool isDragUser);
 
 };
 

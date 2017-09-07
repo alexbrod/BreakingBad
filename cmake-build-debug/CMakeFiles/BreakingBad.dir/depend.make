@@ -3,10 +3,13 @@
 
 CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o: ../BrakingBad.cpp
 CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o: ../Client.h
+CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o: ../Coock.h
 CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o: ../CorruptDeaAgent.h
 CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o: ../DeaAgent.h
+CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o: ../Distributor.h
 CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o: ../DrugDealer.h
 CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o: ../Location.h
+CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o: ../Meth.h
 CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o: ../Person.h
 CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o: ../Provider.h
 

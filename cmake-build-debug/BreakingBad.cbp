@@ -80,10 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Actions.h">
+			<Option target="BreakingBad"/>
+		</Unit>
 		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/BrakingBad.cpp">
 			<Option target="BreakingBad"/>
 		</Unit>
 		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Client.h">
+			<Option target="BreakingBad"/>
+		</Unit>
+		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Coock.h">
 			<Option target="BreakingBad"/>
 		</Unit>
 		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/CorruptDeaAgent.h">
@@ -92,16 +98,28 @@
 		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/DeaAgent.h">
 			<Option target="BreakingBad"/>
 		</Unit>
+		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Distributor.h">
+			<Option target="BreakingBad"/>
+		</Unit>
 		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/DrugDealer.h">
 			<Option target="BreakingBad"/>
 		</Unit>
+		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Ingredient.h">
+			<Option target="BreakingBad"/>
+		</Unit>
 		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Location.h">
+			<Option target="BreakingBad"/>
+		</Unit>
+		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Meth.h">
 			<Option target="BreakingBad"/>
 		</Unit>
 		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Person.h">
 			<Option target="BreakingBad"/>
 		</Unit>
 		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Provider.h">
+			<Option target="BreakingBad"/>
+		</Unit>
+		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/Recipe.h">
 			<Option target="BreakingBad"/>
 		</Unit>
 		<Unit filename="/Users/vladimirkhotyakov/vova/learn/cpp/BreakingBad/CMakeLists.txt">

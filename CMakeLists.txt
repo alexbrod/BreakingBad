@@ -10,6 +10,6 @@ set(SOURCE_FILES
         DrugDealer.h
         Location.h
         Person.h
-        Provider.h Client.h)
+        Provider.h Client.h Coock.h Distributor.h Meth.h Recipe.h Action.h Ingredient.h)
 
 add_executable(BreakingBad ${SOURCE_FILES})
