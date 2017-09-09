@@ -5,6 +5,8 @@
 #ifndef BREAKINGBAD_ACTIONS_H
 #define BREAKINGBAD_ACTIONS_H
 
+#include <ostream>
+
 class Action{
 protected:
     int duration;
@@ -38,6 +40,45 @@ public:
 
     void setScore(int score) {
         Action::score = score;
+    }
+
+    bool operator==(const Action &rhs) const {
+        return duration == rhs.duration &&
+               teamp == rhs.teamp &&
+               score == rhs.score;
+    }
+
+    bool operator!=(const Action &rhs) const {
+        return !(rhs == *this);
+    }
+
+    bool operator<(const Action &rhs) const {
+        if (duration < rhs.duration)
+            return true;
+        if (rhs.duration < duration)
+            return false;
+        if (teamp < rhs.teamp)
+            return true;
+        if (rhs.teamp < teamp)
+            return false;
+        return score < rhs.score;
+    }
+
+    bool operator>(const Action &rhs) const {
+        return rhs < *this;
+    }
+
+    bool operator<=(const Action &rhs) const {
+        return !(rhs < *this);
+    }
+
+    bool operator>=(const Action &rhs) const {
+        return !(*this < rhs);
+    }
+
+    friend ostream &operator<<(ostream &os, const Action &action) {
+        os << "duration: " << action.duration << " teamp: " << action.teamp << " score: " << action.score;
+        return os;
     }
 };
 
