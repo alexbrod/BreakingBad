@@ -26,7 +26,7 @@ public:
 	const Location* const getLocation() const{return location;}
 	void setBalance(float amount);
 	float getBalance() const{return balance;}
-	void moveToLocation(Location* newLocation);	
+	void moveToLocation(Location* newLocation);
 	//operators
 	virtual bool operator==(const Person& p) const =0;
 	virtual void toOs(ostream& os) const {}

@@ -8,13 +8,13 @@
 #include "Client.h"
 #include "Meth.h"
 #include "DrugDealer.h"
-#include "Coock.h"
+#include "Cook.h"
 
 class Distributor: public DrugDealer{
 
 protected:
     Client* clients;
-    Coock* coocks;
+    Coock* cooks;
     Meth meth;
 
 public:
@@ -31,11 +31,11 @@ public:
 
     void setClients(Client *clients) ;
 
-    Coock *getCoocks() const {
+    Coock *getCooks() const {
         return coocks;
     }
 
-    void setCoocks(Coock *coocks) ;
+    void setCooks(Cook *cooks) ;
 
     const Meth &getMeth() const {
         return meth;
@@ -46,9 +46,9 @@ public:
 
     void addClient(const Client& client);
 
-    void addCoocks(const Coock& coock);
+    void addCooks(const Cook& cook);
 
-    bool checkClinet(const Client client);
+    bool checkClient(const Client client);
 
 
     virtual bool operator==(const Person& p) const{}
@@ -56,7 +56,7 @@ public:
 
     virtual void toOs(ostream& os) const
     {
-        os << "Distributor balanse:" << balance << " ";
+        os << "Distributor balance:" << balance << " ";
     }
 
 

@@ -5,8 +5,7 @@
 
 class Provider: public DrugDealer
 {
-	static constexpr int INGRIDIENTS_TYPES = 2;
-	//Ingridient ingridients[INGRIDIENTS_TYPES];
+	Ingredient ingredients[NUM_OF_INGREDIENTS];
 	Location** locations;
 	int fee;
 public:
@@ -16,12 +15,12 @@ public:
 	~Provider(){cout << "Provider::~Provider\n";}
 	//getters and setters
 	const Location * const * const getLocations() const;
-	//Ingridient[] getIngridients() const;
+	Ingredient* getIngredients() const;
 	int getFee() const;
 	void setFee(int amount);
 	//methods
 	void addLocation(const Location& location);
-	//void addIngridient(const Ingridient&);
+	void addIngredients(const Ingredient*& ingredients);
 	void provideTo(Location& location);
 	//operators
 	virtual bool operator==(const Person& p) const{}

@@ -8,11 +8,11 @@
 class Ingredient{
 protected:
     float price;
-    int purety;
+    int purity;
     int amount;
 
 public:
-    Ingredient(float price, int purety, int amount) : price(price), purety(purety), amount(amount) {
+    Ingredient(float price, int purity, int amount) : price(price), purity(purity), amount(amount) {
     }
 
     float getPrice() const {
@@ -23,12 +23,12 @@ public:
         Ingredient::price = price;
     }
 
-    int getPurety() const {
-        return purety;
+    int getPurity() const {
+        return purity;
     }
 
-    void setPurety(int purety) {
-        Ingredient::purety = purety;
+    void setPurity(int purity) {
+        Ingredient::purity = purity;
     }
 
     int getAmount() const {
