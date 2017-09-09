@@ -86,7 +86,7 @@ int main()
             Action** actions = breakingBad.initActions(actionNames, NUM_OF_ACTIONS);
             Ingredient** ingredients = breakingBad.initIngredients(ingredientNames, NUM_OF_INGREDIENTS);
             Recipe* recipe = breakingBad.createRecepie(actions, ingredients);
-//            ((Cook*)persons[i])->setRecepie(recipe);
+            ((Cook*)persons[i])->setRecipe(recipe);
 			cout << "-------------------\n";
 		}
 		else if(i < NUM_OF_DEA_AGENTS + NUM_OF_PROVIDERS + NUM_OF_DISTRIBUTORS + NUM_OF_COOKS + NUM_OF_CLIENTS)
