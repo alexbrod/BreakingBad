@@ -15,6 +15,12 @@ protected:
 public:
     Meth(int price, int purety, int amount) : price(price), purety(purety), amount(amount) {}
 
+    Meth() {
+        price =0;
+        purety = 0;
+        amount = 0;
+    }
+
     int getPrice() const {
         return price;
     }

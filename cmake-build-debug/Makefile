@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BreakingBad
+# Target rules for targets named BrakingBad
 
 # Build rule for target.
-BreakingBad: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BreakingBad
-.PHONY : BreakingBad
+BrakingBad: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BrakingBad
+.PHONY : BrakingBad
 
 # fast build rule for target.
-BreakingBad/fast:
-	$(MAKE) -f CMakeFiles/BreakingBad.dir/build.make CMakeFiles/BreakingBad.dir/build
-.PHONY : BreakingBad/fast
+BrakingBad/fast:
+	$(MAKE) -f CMakeFiles/BrakingBad.dir/build.make CMakeFiles/BrakingBad.dir/build
+.PHONY : BrakingBad/fast
 
-BrakingBad.o: BrakingBad.cpp.o
+main.o: main.cpp.o
 
-.PHONY : BrakingBad.o
+.PHONY : main.o
 
 # target to build an object file
-BrakingBad.cpp.o:
-	$(MAKE) -f CMakeFiles/BreakingBad.dir/build.make CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o
-.PHONY : BrakingBad.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/BrakingBad.dir/build.make CMakeFiles/BrakingBad.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-BrakingBad.i: BrakingBad.cpp.i
+main.i: main.cpp.i
 
-.PHONY : BrakingBad.i
+.PHONY : main.i
 
 # target to preprocess a source file
-BrakingBad.cpp.i:
-	$(MAKE) -f CMakeFiles/BreakingBad.dir/build.make CMakeFiles/BreakingBad.dir/BrakingBad.cpp.i
-.PHONY : BrakingBad.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/BrakingBad.dir/build.make CMakeFiles/BrakingBad.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-BrakingBad.s: BrakingBad.cpp.s
+main.s: main.cpp.s
 
-.PHONY : BrakingBad.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-BrakingBad.cpp.s:
-	$(MAKE) -f CMakeFiles/BreakingBad.dir/build.make CMakeFiles/BreakingBad.dir/BrakingBad.cpp.s
-.PHONY : BrakingBad.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/BrakingBad.dir/build.make CMakeFiles/BrakingBad.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... BreakingBad"
-	@echo "... BrakingBad.o"
-	@echo "... BrakingBad.i"
-	@echo "... BrakingBad.s"
+	@echo "... BrakingBad"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

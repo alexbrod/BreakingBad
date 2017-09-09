@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/BreakingBad.dir/main.cpp.o"
   "CMakeFiles/BreakingBad.dir/BrakingBad.cpp.o"
   "BreakingBad.pdb"
   "BreakingBad"

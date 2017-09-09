@@ -2,10 +2,12 @@
 #define __Provider_H
 
 #include "DrugDealer.h"
+#include "Ingredient.h"
+
 
 class Provider: public DrugDealer
 {
-	Ingredient ingredients[NUM_OF_INGREDIENTS];
+	Ingredient* ingredients;
 	Location** locations;
 	int fee;
 public:
@@ -20,7 +22,7 @@ public:
 	void setFee(int amount);
 	//methods
 	void addLocation(const Location& location);
-	void addIngredients(const Ingredient*& ingredients);
+	void addIngredients(const Ingredient** ingredients);
 	void provideTo(Location& location);
 	//operators
 	virtual bool operator==(const Person& p) const{}

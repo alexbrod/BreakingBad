@@ -5,10 +5,11 @@ using namespace std;
 #include "CorruptDeaAgent.h"
 #include "Provider.h"
 #include "Action.h"
-#include "Ingredient.h"
 #include "Recipe.h"
 #include "Distributor.h"
-#include "Client.h"
+#include "BreakingBad.h"
+#include "Cook.h"
+
 
 
 int main()
@@ -68,15 +69,15 @@ int main()
 		else if(i < NUM_OF_DEA_AGENTS + NUM_OF_PROVIDERS)
 		{
 			persons[i] = new Provider(i, const_cast<char*>(personsNames[i]), (i + 1) * 1000, PROVIDER_FEE);
-            Ingredient** ingredients = breakingBad.initIngredients(ingredientNames, NUM_OF_INGREDIENTS);
-            ((Provider*)persons[i])->addIngredients(ingredients);
+            Ingredient** ingredients = breakingBad.initIngBreakingBadredients(ingredientNames, NUM_OF_INGREDIENTS);
+//            ((Provider*)persons[i])->addIngredients(reinterpret_cast<const Ingredient **>(ingredients));
 			cout << "-------------------\n";
 			cout << *persons[i] << "\n";	 		
 	 		cout << "-------------------\n";
 		}
 		else if(i < NUM_OF_DEA_AGENTS + NUM_OF_PROVIDERS + NUM_OF_DISTRIBUTORS)
 		{
-			persons[i] = new Distributor(i, personsNames[i], (i + 1) * 1000);
+			persons[i] = new Distributor(i, const_cast<char *>(personsNames[i]), (i + 1) * 1000);
 			cout << "-------------------\n";
 		}
 		else if(i < NUM_OF_DEA_AGENTS + NUM_OF_PROVIDERS + NUM_OF_DISTRIBUTORS + NUM_OF_COOKS)
@@ -90,7 +91,7 @@ int main()
 		}
 		else if(i < NUM_OF_DEA_AGENTS + NUM_OF_PROVIDERS + NUM_OF_DISTRIBUTORS + NUM_OF_COOKS + NUM_OF_CLIENTS)
 		{
-			persons[i] = new Client(i, personsNames[i], (i + 1) * 1000);
+			persons[i] = new Client(i, const_cast<char *>(personsNames[i]), (i + 1) * 1000);
 			cout << "-------------------\n";
 		}
 		else if(i < NUM_OF_DEA_AGENTS + NUM_OF_PROVIDERS + NUM_OF_DISTRIBUTORS + NUM_OF_COOKS + NUM_OF_CLIENTS

@@ -13,32 +13,38 @@
 class Distributor: public DrugDealer{
 
 protected:
-    Client* clients;
-    Coock* cooks;
+    Client** clients;
+    Cook** cooks;
     Meth meth;
 
 public:
 
     Distributor(int id, char* name = NULL, float balance = 0, int fee = 0):
-            Person(id, name, balance), DrugDealer(id, name, balance),meth(0,0,0){cout << "Distributor::Distributor\n";}
+            Person(id, name, balance), DrugDealer(id, name, balance){cout << "Distributor::Distributor\n";}
 
     Distributor(const Distributor& distributor) = delete;
     ~Distributor(){cout << "Distributor::~Distributor\n";}
 
-    Client *getClients() const {
+    Client **getClients() const {
         return clients;
     }
 
     void setClients(Client *clients) ;
 
-    Coock *getCooks() const {
-        return coocks;
+    Cook **getCooks() const {
+        return cooks;
     }
 
-    void setCooks(Cook *cooks) ;
+    void setCooks(Cook **cooks) {
+        Distributor::cooks = cooks;
+    }
 
     const Meth &getMeth() const {
         return meth;
+    }
+
+    void setClients(Client **clients) {
+        Distributor::clients = clients;
     }
 
     void setMeth(const Meth &meth) ;
@@ -46,7 +52,7 @@ public:
 
     void addClient(const Client& client);
 
-    void addCooks(const Cook& cook);
+
 
     bool checkClient(const Client client);
 

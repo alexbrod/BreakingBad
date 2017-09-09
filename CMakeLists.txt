@@ -4,12 +4,12 @@ project(BreakingBad)
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES
-        BrakingBad.cpp
+        main.cpp
         CorruptDeaAgent.h
         DeaAgent.h
         DrugDealer.h
         Location.h
         Person.h
-        Provider.h Client.h Coock.h Distributor.h Meth.h Recipe.h Action.h Ingredient.h)
+        Provider.h Client.h Cook.h Distributor.h Meth.h Recipe.h Action.h Ingredient.h BreakingBad.h)
 
-add_executable(BreakingBad ${SOURCE_FILES})
+add_executable(BrakingBad ${SOURCE_FILES})
