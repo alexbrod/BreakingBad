@@ -86,6 +86,8 @@ int main()
 	 		cout << "-------------------\n";
 		}
 	}
+
+    cout << "bla";
 	
 	
 	return 1;
