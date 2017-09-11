@@ -8,31 +8,31 @@
 class BreakingBad{
 
 public:
-    Ingredient **initIngBreakingBadredients(const char** ingredientNames, const int i);
+    Ingredient **initBreakingBadIngredients(const char** ingredientNames, const int i){}
 
-    Action **initActions(const char **actionNAmes, const int amount) ;
+    Action **initActions(const char **actionNAmes, const int amount) {}
 
-    Ingredient **initIngredients(const char **ingridNames, const int amount) ;
+    Ingredient **initIngredients(const char **ingridNames, const int amount) {}
 
-    Recipe *createRecepie(Action **pAction, Ingredient **pIngredient) ;
+    Recipe *createRecepie(Action **pAction, Ingredient **pIngredient) {}
 
-    void addPersons(Person **pPerson) ;
+    void addPersons(Person **pPerson) {}
 
-    void addLocations(Location **pLocation) ;
+    void addLocations(Location **pLocation) {}
 
-    void assignProvidersToCooks() ;
+    void assignProvidersToCooks() {}
 
-    void assignDistributorsToCooks() ;
+    void assignDistributorsToCooks() {}
 
-    bool endOfGame() ;
+    bool endOfGame() { return false;}
 
-    void allocatePersonsToNewLocations() ;
+    void allocatePersonsToNewLocations(){}
 
-    void workForThisTurn();
+    void workForThisTurn(){}
 
-    void showPersonsStats();
+    void showPersonsStats(){}
 
-    void showWhoWon();
+    void showWhoWon(){}
 };
 
 #endif //BREAKINGBAD_BREAKINGBAD_H

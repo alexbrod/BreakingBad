@@ -28,7 +28,7 @@ public:
 	float getBalance() const{return balance;}
 	void moveToLocation(Location* newLocation);
 	//operators
-	virtual bool operator==(const Person& p) const =0;
+	virtual bool operator==(const Person& p) const{}
 	virtual void toOs(ostream& os) const {}
 	friend ostream& operator<<(ostream& os, const Person& p)
 	{

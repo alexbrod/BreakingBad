@@ -23,7 +23,7 @@ public:
 	bool isArrested() const;
 	void getArrested();
 	//operators
-	virtual bool operator==(const Person& p) const =0;
+	virtual bool operator==(const Person& p) const {}
 	virtual void toOs(ostream& os) const
 	{
 		os << "In DrugDealer arrested:" << arrested << " ";
